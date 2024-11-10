@@ -1,0 +1,278 @@
+      /* Internal CSS */
+
+      section {
+        padding-top: 5rem;
+      }
+
+      /* jumbotron section Start */
+      .jumbotron {
+        padding-top: 6rem;
+        background-color: #e2edff;
+      }
+      /* jumbotron section End */
+
+      /* projects section  start */
+      #project {
+        background-color: #e2edff;
+      }
+      /* projects section  start */
+
+      /* Study Section Start */
+      .study {
+        position: relative;
+        padding: 45px 0 15px 0;
+      }
+
+      .study .timeline {
+        position: relative;
+      }
+
+      .study .timeline::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        background: #1d5abc;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+      }
+
+      .study .timeline .timeline-item {
+        position: relative;
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
+      .study .timeline .timeline-item.left {
+        left: 0;
+        padding-right: 30px;
+      }
+
+      .study .timeline .timeline-item.right {
+        left: 50%;
+        padding-left: 30px;
+      }
+
+      .study .timeline .timeline-item::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 48px;
+        right: -8px;
+        background: #ffffff;
+        border: 2px solid #1d5abc;
+        border-radius: 16px;
+        z-index: 1;
+      }
+
+      .study .timeline .timeline-item.right::after {
+        left: -8px;
+      }
+
+      .study .timeline .timeline-tanggal {
+        position: absolute;
+        width: 100%;
+        top: 44px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1d5abc;
+        letter-spacing: 1px;
+        z-index: 1;
+      }
+
+      .study .timeline .timeline-item.left .timeline-tanggal {
+        text-align: left;
+        left: calc(100% + 55px);
+      }
+
+      .study .timeline .timeline-item.right .timeline-tanggal {
+        text-align: right;
+        right: calc(100% + 55px);
+      }
+
+      .study .timeline .timeline-text {
+        padding: 30px;
+        background: #e2edff;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
+      }
+
+      .study .timeline .timeline-text h2 {
+        margin: 0 0 5px 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .study .timeline .timeline-text h4 {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+      }
+
+      .study .timeline .timeline-text p {
+        font-size: 16px;
+      }
+
+      /* tampilan layar kecil/mobile study section */
+      @media (max-width: 767.98px) {
+        .study .timeline::after {
+          left: 8px;
+        }
+
+        .study .timeline .timeline-item {
+          width: 100%;
+          padding-left: 38px;
+        }
+
+        .study .timeline .timeline-item.left {
+          padding-right: 0;
+        }
+
+        .study .timeline .timeline-item.right {
+          left: 0%;
+          padding-left: 38px;
+        }
+
+        .study .timeline .timeline-item.left::after,
+        .study .timeline .timeline-item.right::after {
+          left: 0;
+        }
+
+        .study .timeline .timeline-item.left::before,
+        .study .timeline .timeline-item.right::before {
+          left: 18px;
+          border-color: transparent #dddddd transparent transparent;
+        }
+
+        .study .timeline .timeline-item.left .timeline-tanggal,
+        .study .timeline .timeline-item.right .timeline-tanggal {
+          position: relative;
+          top: 0;
+          right: auto;
+          left: 0;
+          text-align: left;
+          margin-bottom: 10px;
+        }
+      }
+      /* Study Section End */
+
+      /* contact section  start */
+      #contact {
+        background-color: #e2edff;
+      }
+      /* contact section  end */
+
+      /*  Footer Start */
+      .footer {
+        position: relative;
+        margin-top: 40px;
+      }
+
+      .footer .container-fluid {
+        padding: 20px 0 0 0;
+      }
+
+      .footer .footer-info {
+        position: relative;
+        width: 100%;
+        text-align: center;
+      }
+
+      .footer .footer-info h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .footer .footer-info h3 {
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .footer .footer-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer .footer-menu p {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 0 15px;
+        border-right: 1px solid #ffffff;
+      }
+
+      .footer .footer-menu p:last-child {
+        border: none;
+      }
+
+      .footer .footer-social a i {
+        margin-right: 15px;
+        font-size: 20px;
+        color: #ffffff;
+        transition: 0.3s;
+      }
+
+      .footer .copyright {
+        position: relative;
+        text-align: center;
+        padding-bottom: 25px;
+      }
+
+      .footer .copyright::before {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 1px;
+        top: 0;
+        left: 25%;
+        background: rgba(256, 256, 256, 0.2);
+      }
+
+      .footer .copyright p {
+        margin: 0;
+        color: #ffffff;
+      }
+
+      .footer .copyright .col-md-6:last-child p {
+        text-align: right;
+      }
+
+      .footer .copyright p a {
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .footer .copyright p a:hover {
+        color: #414141;
+      }
+
+      /* tampilan layar kecil/mobile footer */
+      @media (max-width: 575.98px) {
+        .footer .footer-info h2 {
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .footer .footer-info h3 {
+          margin-bottom: 20px;
+          font-size: 16px;
+        }
+
+        .footer .footer-menu p {
+          font-size: 16px;
+          line-height: 16px;
+          padding: 0 5px;
+        }
+      }
+      /*  Footer End */
